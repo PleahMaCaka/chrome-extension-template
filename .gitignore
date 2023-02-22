@@ -1,0 +1,11 @@
+# IDE
+.idea
+.fleet
+.vscode
+
+*.iml
+
+# not needed
+node_modules
+dist
+build

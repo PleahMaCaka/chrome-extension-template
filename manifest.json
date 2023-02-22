@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Extension Template",
+    "version": "0.1.0",
+    "homepage_url": "https://github.com/PleahMaCaka/chrome-extension-template",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "js/content/content.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "js/background/background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "assets/logo.png",
+            "32": "assets/logo.png",
+            "48": "assets/logo.png",
+            "128": "assets/logo.png"
+        }
+    },
+    "icons": {
+        "16": "assets/logo.png",
+        "32": "assets/logo.png",
+        "48": "assets/logo.png",
+        "128": "assets/logo.png"
+    }
+}
